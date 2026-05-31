@@ -24,17 +24,19 @@ public class Room {
 	 @NotNull
 	 @NotEmpty
 	 @Pattern(regexp = "[1-100]+",
-	                 message = " Room number should be between 1 and 100")
+	        message = " Room number should be between 1 and 100")
 	 private String room_number;
 	 
 	 @NotNull
 	 @NotEmpty
-	 @Pattern(regexp = "[1-10]+", message = " Room capacity should be between 1 and 10")
+	 @Pattern(regexp = "[1-10]+", 
+	 		message = " Room capacity should be between 1 and 10")
 	 private int capacity;
 	 
 	 @NotNull
 	 @NotEmpty
-	 @Pattern(regexp = "[1-1000]+", message = " Price per night should be between 1 and 1000")
+	 @Pattern(regexp = "[1-1000]+", 
+	 		message = " Price per night should be between 1 and 1000")
 	 private float pricePerNight;
 	 
 	 //setter and getter

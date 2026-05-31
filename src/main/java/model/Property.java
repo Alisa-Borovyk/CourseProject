@@ -26,21 +26,21 @@ public class Property {
 	
 	@NotNull
 	@NotEmpty
-	@Pattern (regexp = "^[A-Z][a-zA-Z ]*$",
+	@Pattern (regexp =  "^[A-Z][a-zA-Z0-9 ,.\\-]*$",
 		    message = "Must start with a capital letter")
 	@Column(name = "Name")
 	private String name;
 	
 	@NotNull
 	@NotEmpty
-	@Pattern(regexp = "[A-Z]{1}[a-z]+",
+	@Pattern(regexp =  "^[A-Z][a-zA-Z0-9 ,.\\-]*$",
 			message = "Location should be with tha first capital letter and after that small letters or spaces")
 	@Column(name = "Location")
 	private String location;
 	
 	@NotNull
 	@NotEmpty
-	@Pattern(regexp = "[A-Z]{1}[a-z]+",
+	@Pattern(regexp =  "^[A-Z][a-zA-Z0-9 ,.\\-]*$",
 			message = "Description should be with tha first capital letter and after that small letters or spaces")
 	@Column(name = "Description")
 	private String description;

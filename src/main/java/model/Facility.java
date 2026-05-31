@@ -23,14 +23,14 @@ public class Facility {
 	
 	@NotNull
 	@NotEmpty
-	@Pattern(regexp = "[A-Z]{1}[a-z]+", 
+	@Pattern(regexp =  "^[A-Z][a-zA-Z0-9 ,.\\-]*$", 
 	message = "Name should be with tha first capital letter and after that small letters or spaces")
 	@Column(name = "Name")
 	private String name; 
 	
 	@NotNull
 	@NotEmpty
-	@Pattern(regexp = "[A-Z]{1}[a-z]+", 
+	@Pattern(regexp =  "^[A-Z][a-zA-Z0-9 ,.\\-]*$", 
 	message = "Description should be with tha first capital letter and after that small letters or spaces")
 	@Column(name = "Description")
 	private String description;
